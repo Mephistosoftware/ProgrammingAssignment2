@@ -1,7 +1,9 @@
 ### Introduction 
 This repository holds the R code for two functions:
-1. makeCacheMatrix
-2. cacheSolve
+<ul>
+<li>1. makeCacheMatrix</li>
+<li>2. cacheSolve</li>
+</ul>
 
 The first function will create an inverse of a matrix and cache
 the results.
