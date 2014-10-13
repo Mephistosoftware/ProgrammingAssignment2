@@ -1,8 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## This function will create a matrix object that can 
-## cache its inverse
+## cache its inverse. To run use this example, use these commands:
+##R> mat1 <- matrix(rnorm(9), 3)
+##R> solved <- solve(mat1)
+##R> mycache <-makeCacheMatrix()
+##R> mycache$set(mat1)
+##R> mycache2 <- cacheSolve(mycache)
+##R> identical(solved, mycache2)
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
